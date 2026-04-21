@@ -426,6 +426,70 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* ── SOCIAL MEDIA FEED ── */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="text-center mb-12">
+            <span className="text-orange-500 font-semibold text-sm uppercase tracking-widest">
+              Join Us
+            </span>
+            <h2 className="section-title mt-1">📱 Connect with Us</h2>
+            <p className="section-subtitle">
+              Follow our journey on social media
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Facebook Feed */}
+            <div className="bg-gray-50 p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center">
+              <h3 className="font-serif font-bold text-2xl mb-6 flex items-center gap-2">
+                <span className="text-blue-600">Facebook</span> Page
+              </h3>
+              <div className="w-full overflow-hidden flex justify-center">
+                <iframe
+                  title="Facebook Page"
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fuber&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                  width="500"
+                  height="500"
+                  style={{ border: "none", overflow: "hidden" }}
+                  scrolling="no"
+                  frameBorder="0"
+                  allowFullScreen={true}
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  className="rounded-xl shadow-lg w-full max-w-[500px]"
+                ></iframe>
+              </div>
+            </div>
+
+            {/* Instagram Feed */}
+            <div className="bg-gray-50 p-6 rounded-3xl shadow-sm border border-gray-100 flex flex-col items-center">
+              <h3 className="font-serif font-bold text-2xl mb-6 flex items-center gap-2">
+                <span className="text-pink-600">Instagram</span> Feed
+              </h3>
+              <div className="w-full overflow-hidden flex flex-col items-center gap-4">
+                <iframe
+                  title="Instagram Feed"
+                  src="https://www.instagram.com/uber/embed"
+                  width="100%"
+                  height="500"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency={true}
+                  className="rounded-xl shadow-lg max-w-[400px]"
+                ></iframe>
+                <a
+                  href="https://www.instagram.com/uber/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 text-pink-600 font-bold hover:underline"
+                >
+                  View on Instagram <ArrowRight size={16} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── TESTIMONIALS ── */}
       <section className="py-20 bg-orange-50">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
